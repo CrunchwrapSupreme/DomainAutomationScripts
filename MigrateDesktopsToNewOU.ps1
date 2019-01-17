@@ -27,7 +27,7 @@ ForEach($computer in $c) {
     $opt = ""
     $optparam = ""
     try {
-        if($os -match "^(?:.*Server.*|.*Windows.*\sNT\s*|\s*)$") {
+        if($os -match "^(?:.*Server.*|.*Windows.*\sNT\s*|\s*|.*2000.*)$") {
             continue
         }
         elseif($os -match "^(?:.*Windows.*XP.*)$") {
