@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<!-- Rename this file to config.xml -->
+<configuration>
+    <vals>
+        <!-- Enter Domain Connection String Here e.g. value="DC=company,DC=com" -->
+        <domainstr value=""/>
+    </vals>
+</configuration>
