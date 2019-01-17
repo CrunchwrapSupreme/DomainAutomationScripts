@@ -2,6 +2,7 @@
 # Created by David Young on 1/10/2019
 # Requires Remote Server Administration Tools from Microsoft to run
 # Presently only works via HTTP (wsman)
+import-module ActiveDirectory
 
 $failed_updates = @()
 $filedate = (Get-Date).ToString() -replace " ", "_"

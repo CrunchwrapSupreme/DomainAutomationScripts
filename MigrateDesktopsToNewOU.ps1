@@ -2,7 +2,8 @@
 # Created by David Young on 1/14/2019
 # Requires Remote Server Administration Tools from Microsoft to run
 Import-Module ActiveDirectory
-[xml]$configf = Get-Content .\Config=.xml
+
+[xml]$configf = Get-Content .\Config.xml
 $domainstr = $configf.configuration.vals.domainstr
 
 $filedate = (Get-Date).ToString() -replace " ", "_"

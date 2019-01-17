@@ -3,8 +3,10 @@
 # Created by David Young on 1/15/2019
 # Requires Remote Server Administration Tools from Microsoft to run
 Import-Module ActiveDirectory
-[xml]$configf = Get-Content .\Config=.xml
+
+[xml]$configf = Get-Content .\Config.xml
 $domainstr = $configf.configuration.vals.domainstr
+
 $pccount = 0
 $target = "OU=BrokenRetiredPCs,$domainstr"
 
